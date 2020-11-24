@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width: 1000px){
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        
+    }
+   .main-text{
+    text-transform: uppercase;
+    font-size: 40px;
+       padding-top: 20px;
+       padding-bottom: 10px;
+
+}
+.container{
+    text-transform: translate(-50%, -50%);
+    width: 400px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0, .2),
+        0 -1px 4px rgba(0,0,0,.2);
+    overflow: hidden;
+    border-radius: 30px;
+}
+    .social{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    .main-part{
+    display: flex;
+    flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .me{
+        display: none;
+    }
+}
+@media(min-width: 1001px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+   .main-text{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 5%;
+       width: 400px;
+       padding-top: 15px;
+       
+}
+.container{
+    text-transform: translate(-50%, -50%);
+    width: 410px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0, .2),
+        0 -1px 4px rgba(0,0,0,.2);
+    overflow: hidden;
+    border-radius: 30px;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-part{
+    display: flex;
+    flex-direction: row;
+    }
+    
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+    display: block;
+    width: calc(330px / 4);
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+.fa{
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+span{
+    display: block;
+    font-size: .8em;
+    transform: translateY(-20px);
+    transition: .5s cubic-bezier(.75, -1, 0, 1.15);
+    text-transform: uppercase;
+}
+li:hover .fa{
+    transform: translateY(-200px);
+}
+li:hover span{
+    transform: translateY(-70px);
+} 
+
+/*main-part*/
+
+
+.main-part{
+    width: 100%;
+    margin-top: 30px;
+}
+.main-part-1{
+     width: 28%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.me{
+    width: 100%;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+.me:hover{
+    transform: rotate(180deg);
+}
+.main-part-2{
+    width: 42%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 20px;
+}    
+.subtitle{
+    font-size: 30px;
+    margin-bottom: 10px;
+} 
+.title{
+    font-size: 25px;    
+}
+.title1{
+    margin-bottom: 40px;
+}
+    
+/*footer*/
+.social{
+    width: 90%;
+    height: 60px;
+    background-color: #fff;
+    margin-top: 50px;
+    transition: .1s;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+.social{
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 110%;
+    width: 90%; 
+  }
+
+  to {
+    margin-left: 5%;
+    width: 90%;
+
+  }
+}
+.icon{
+        width: 30px;
+    height: 30px;
+}
+.social1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+.inst, .github, .facebook{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.social1{
+    color: black;
+    text-decoration: none;
+}
+.social1:hover{
+    font-weight: bolder;
+}
+/*more info*/
+ .inf-lay-1{
+    margin-top: 50px;
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 7%;
+    background-color: #fff;
+    border: 2px solid black;
+    height: 80px;
+    position: relative;
+    z-index: 2;
+    position: absolute; 
+    text-align: center;
+    font-size: 35px;
+    padding-top: 15px;
+
+}
+.inf-lay-1:hover{
+    display: none;
+}
+
+.inf-lay-2{
+    width: 85%;
+    margin-right: 6%;
+    margin-left: 9%;
+    background-color: black;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: 65px;
+
+    text-align: center;
+    font-size: 35px;
+    padding-top: 15px;
+} 
